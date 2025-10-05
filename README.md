@@ -19,6 +19,10 @@ The agent follows a stateful, cyclical workflow managed by LangGraph:
 3. **Test**: The agent executes the generated code, running it against the sample PDF and comparing the output DataFrame with the target CSV.
 4. **Refine (or Finish)**: If the test fails, the agent feeds the error and the failed code back into the model for another attempt. If the test succeeds, the process completes, and the final parser is saved.
 
+![AI Agent Workflow Diagram](Karbon_ai_challenge(agent workflow).png)
+
+_Diagram: AI Agent Workflow Phases - Generate, Test, and Decision Loop_
+
 ## 🚀 Getting Started
 
 Follow these steps to set up and run the AI agent on your local machine.
@@ -79,6 +83,7 @@ python test_parser.py --parser-module custom_parsers.icici_parser --pdf-path dat
 ```
 
 **Arguments:**
+
 - `--parser-module`: The Python module path to the generated parser.
 - `--pdf-path`: The path to the sample PDF statement.
 - `--csv-path`: The path to the ground-truth CSV file for comparison.
@@ -109,3 +114,4 @@ It's simple to extend the agent to support a new bank:
 
 ```bash
 python agent.py --target hdfc
+```
