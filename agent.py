@@ -1,6 +1,5 @@
 """
 AI Agent for Automated Bank Statement Parser Generation
-Fixed version based on TypeScript/JavaScript logic with proper Google GenAI integration
 """
 
 import os
