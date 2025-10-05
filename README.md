@@ -19,7 +19,7 @@ The agent follows a stateful, cyclical workflow managed by LangGraph:
 3. **Test**: The agent executes the generated code, running it against the sample PDF and comparing the output DataFrame with the target CSV.
 4. **Refine (or Finish)**: If the test fails, the agent feeds the error and the failed code back into the model for another attempt. If the test succeeds, the process completes, and the final parser is saved.
 
-![AI Agent Workflow Diagram](Karbon_ai_challenge(agent workflow).png)
+![AI Agent Workflow Diagram](https://github.com/Adity1620/ai-agent-challenge/blob/main/Karbon_ai_challenge(agent%20workflow).png)
 
 _Diagram: AI Agent Workflow Phases - Generate, Test, and Decision Loop_
 
